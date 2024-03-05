@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+    <head>
+   
+        <!--=============== Metas Compatibilidade ===============-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--=============== Nome do site ===============-->
+        <title>WORLD BARBERCUT</title>
+       
+        <!--=============== Descrição do site ===============-->
+        <meta name="description" content="O melhor corte que temos é a o da sua tristeza, buscando sua felicidade em trabalhar e se sentir mais confiante e renovado.">
+    
+        <!--=============== Favicon ===============-->
+        <link rel="icon" type="image/png" href="./assets/images/barbericon.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./assets/images/barbericon.png" sizes="64x64">
+        <link rel="apple-touch-icon" href="./assets/images/barbericon.png">
+        <link rel="shortcut icon" href="./assets/images/barbericon.png">
+        <meta property="og:logo" content="./assets/images/barbericon.png" size="180x180">
+    
+        <!--=============== Og Site ===============-->
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="WORLD BARBERCUT - Cortes Masculinos">
+        <meta property="og:description" content="O melhor corte que temos é a o da sua tristeza, buscando sua felicidade em trabalhar e se sentir mais confiante e renovado.">
+        <meta property="og:image" content="./assets/images/barbericon.png">
+        <meta property="og:image:width" content="1080">
+        <meta property="og:image:height" content="1920">
+    
+        <!--=============== Twitter ===============-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@worldcut">
+        <meta name="twitter:title" content="WORLD BARBERCUT">
+        <meta name="twitter:description" content="O melhor corte que temos é a o da sua tristeza, buscando sua felicidade em trabalhar e se sentir mais confiante e renovado.">
+        <meta name="twitter:image" content="/assets/images/frontpage/share.png">
+        <meta name="robots" content="index,follow">
+    
+    <!--=============== Css ===============-->
+    <link rel="stylesheet" id="stylesheet-css" href="assets/css/navagenda.css" type="text/css" media="all">
+    <link rel="stylesheet" id="stylesheet-css" href="assets/css/agendamento.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <!-- Bibliotecas -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" id="stylesheet-css" href="./assets/css/navbarbottom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Bibliotecas -->
+    
+    
+</head>
+<body>
+
+  
+   <!--=============== HEADER ===============-->
+   <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="./index.html" class="nav__logo">
+           <h1>WORLD BARBER<h1 style="color: #05dc13ac;">CUT</h1></h1>
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+
+        <!--=============== NAV MENU ===============-->
+   <div class="nav__menu" id="nav-menu">
+    <ul class="nav__list">
+       <li><a href="./index.html" class="nav__link">Página Inicial</a></li>
+
+       <!--=============== DROPDOWN 1 ===============-->
+       <li class="dropdown__item">
+          <div class="nav__link">
+             Cortes <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+          </div>
+
+          <ul class="dropdown__menu">
+             <li>
+                <a href="https://www.instagram.com/qodbarbershop/" class="dropdown__link">
+                 Portfólio
+                </a>                          
+             </li>
+             
+             <li>
+                <a href="#schedulevip" class="dropdown__link">
+                 Agende
+                </a>                          
+             </li>
+
+             <!--=============== DROPDOWN SUBMENU ===============-->
+          
+          </ul>
+       </li>
+
+             <!--=============== DROPDOWN 2 ===============-->
+         <li class="dropdown__item">
+          <div class="nav__link">
+             Contato <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+          </div>
+
+          <ul class="dropdown__menu">
+             <li>
+                <a href="#" class="dropdown__link">
+                  <i class="fa-solid fa-envelope-open" style="color: #ffffff;"></i> Email
+                </a>
+             </li>
+
+             <li>
+                <a href="#" class="dropdown__link">
+                  <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i> Whatsapp
+                </a>
+             </li>
+          </ul>
+       </li>
+
+    </ul>
+ </div>
+</nav>
+ </header>
+
+    <!-- CONTACT -->
+
+   
+<!-- Agendamento -->
+
+  <div class="responsivedesktop">
+    <div class="container-reservar">
+        
+<form action="" name="contact" method="post" onsubmit="enviarAgendamento(event)">
+    <div class="reservar">
+        <div class="section-reservar">
+            <h1>DETALHES DE CONTATO</h1>
+        </div>
+
+        <div class="inputBox">
+            <input type="text" id="nome" required>
+            <span>Insira seu nome</span>
+        </div>
+
+        <div class="inputBox">
+            <input type="tel" id="phone-number" name="phone-number" autocomplete="off" required>
+            <span>Telefone com DDD</span>
+        </div>
+
+        <div class="section-reservar2">
+            <h1>DETALHES DO AGENDAMENTO</h1>
+        </div>
+
+        <div class="inputBox-enabled">
+            <input type="tel" id="data" name="data" maxlength="10" placeholder="dd/mm/aaaa" required>
+            <span>Escolha uma data</span>
+        </div>
+
+        <div class="inputBox-enabled">
+            <input type="text" id="hora" name="hora" maxlength="5" required>
+            <span>Escolha uma hora</span>
+        </div>
+
+        <div class="simulador-result time">
+            <p style="color: #000000;"><i class="fa-regular fa-calendar" style="color: #000000;"></i> Seg a Sex &nbsp <i class="fa-regular fa-clock" style="color: #000000;"></i> 10:00 às 23:00.</p>
+            <p></p>
+        </div>
+
+        <div class="container-black">
+            <div class="container-serv">
+                <div class="section-reservar3">
+                    <h1>ESCOLHA NOSSOS SERVIÇOS</h1>
+                </div>
+
+                <div class="inputBoxService">
+                    <input type="checkbox" name="cabelo" id="corte" value="Corte">
+                    <label class="servicecheck" for="corte">Cabelo</label><br>
+
+                    <input type="checkbox" name="barba" id="barba" value="Barba">
+                    <label class="servicecheck" for="barba">Barba</label><br>
+
+                    <input type="checkbox" name="sombrancelha" id="sombrancelha" value="Sombrancelha">
+                    <label class="servicecheck" for="sombrancelha">Sombrancelha</label><br>
+
+                    <input type="checkbox" name="assinatura" id="assinar" value="Assinar">
+                    <label class="servicecheck" for="assinar">Assinar Mensal</label><br>
+
+                    <input type="checkbox" name="hidratacao" id="hidratacao" value="Hidratação">
+                    <label class="servicecheck" for="hidratacao">Hidratação</label><br>
+
+                    <input type="checkbox" name="alisamento" id="alisamento" value="Alisamento">
+                    <label class="servicecheck" for="alisamento">Alisamento</label><br>
+                </div>
+
+                <div class="simulador-result">
+                    <p>Preço Total:</p>
+                    <p id="precoLocalEncontro">R$ 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-reservar3">
+            <h1>ESCOLHA SEU BARBEIRO</h1>
+        </div>
+
+        <div class="inputBox">
+            <select id="barbeiros" name="barbeiros" required>
+                <option value="" disabled selected>Escolha o Barbeiro</option>
+                <option value="João">João</option>
+                <option value="Pedro">Pedro</option>
+                <option value="Paulo">Paulo</option>
+            </select>
+        </div>
+
+        <div class="card" name="cardBarbeiro" id="cardBarbeiro">
+            <div class="card-header">Barbeiros Disponíveis</div>
+            <div class="card-body" id="barbeirosDisponiveis">
+                <!-- As informações serão adicionadas dinamicamente aqui -->
+            </div>
+        </div>
+
+
+        <div class="section-reservar3">
+            <h1>DETALHES ADICIONAIS</h1>
+        </div>
+
+        <div class="inputBox">
+            <textarea name="detalhes" id="detalhes" placeholder="Escreva um detalhe adicional para o agendamento..." cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="meetBtn">
+            <button type="submit" id="agendarBtn">AGENDAR</button>
+        </div>
+
+    </div>
+</form>
+            </div>
+          </div>
+        </div>
+        
+  <!-- Agendamento -->
+  <br><br><br><br>
+
+  <!-- Footer -->
+  
+  <footer class="footer-section">
+    <div class="container">
+ 
+        <div class="footer-content pt-5 pb-1">
+            <div class="row">
+              
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Navegue pelo site</h3>
+                        </div>
+                        <ul>
+                            <li><button class="footer-button"><a href="#">Página inicial</a></button></li>
+                            <li><button class="footer-button"><a href="./conteudos/index.html">Cortes</a></button></li>
+                            <li><button class="footer-button"><a href="#">Contato</a></button></li>
+                            <li><button class="footer-button"><a href="#schedulevip">Agende</a></button></li>
+                            <li><button class="footer-button"><a href="https://api.whatsapp.com/send?phone=5551985311522">Whatsapp</a></button></li>
+                            <li><button class="footer-button"><a href="#">Instagram</a></button></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Notícias</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Receba notícias por Whatsapp quando a barbearia estiver com novidades!</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Insira seu número de telefone">
+                                <button><i class="fab fa-whatsapp"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-xl-4 col-lg-4 mb-50">
+                   
+                 <div class="footer-widget">
+               
+                    <div class="footer-social-icon">
+                        <span>Siga-me</span>
+                        <ul class="social_icon">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                      </ul>
+ 
+                    </div>
+ 
+                </div>
+ 
+                <div class="col-xl-10 col-lg-10 text-center text-lg-left">
+                 <div class="copyright-text">
+                     <p>Copyright &copy; 2024 <a href="#">WORLD A.I</a></p>
+                     <p>PÁGINA CRIADA TOTALMENTE A FIM EDUCACIONAL, NÃO UTILIZE PARA COMÉRCIO! SOMENTE A FIM DE APRENDIZADO. POR FAVOR INSIRA OS CRÉDITOS A <a href="#">@ALIANDERSON-WORLD</a></p>
+                 </div>
+             </div>
+ 
+            </div>
+            </div>
+        </div>
+    </div>
+ 
+ </footer>
+ 
+ 
+ <!-- footer -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/sliderservice.js"></script>
+<script src="js/playbutton.js"></script>
+<script src="js/cartao.js"></script>
+<script src="js/validadorform.js"></script>
+<script src="js/cartaflex.js"></script>
+<script src="js/simulador.js"></script>
+<script src="js/barbeiros.js"></script>
+<script src="js/desejos.js"></script>
+<script src="js/scrollsuave.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/tagcloud.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/simuladorservices.js"></script>
+<script src="js/iconplay.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+ <!--=============== MAIN JS ===============-->
+ <script src="assets/js/main.js"></script>
+
+
+<script>
+    const resultFinalButton = document.querySelector('.result-final button');
+    resultFinalButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        mostrarValoresSelecionados();
+    });
+</script>
+
+<script>
+   const search = document.querySelector('.input-group input'),
+    table_rows = document.querySelectorAll('tbody tr'),
+    table_headings = document.querySelectorAll('thead th');
+
+// 1. Searching for specific data of HTML table
+search.addEventListener('input', searchTable);
+
+function searchTable() {
+    table_rows.forEach((row, i) => {
+        let table_data = row.textContent.toLowerCase(),
+            search_data = search.value.toLowerCase();
+
+        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+        row.style.setProperty('--delay', i / 25 + 's');
+    })
+
+    document.querySelectorAll('tbody tr:not(.hide)').forEach((visible_row, i) => {
+        visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
+    });
+}
+
+// 2. Sorting | Ordering data of HTML table
+
+table_headings.forEach((head, i) => {
+    let sort_asc = true;
+    head.onclick = () => {
+        table_headings.forEach(head => head.classList.remove('active'));
+        head.classList.add('active');
+
+        document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
+        table_rows.forEach(row => {
+            row.querySelectorAll('td')[i].classList.add('active');
+        })
+
+        head.classList.toggle('asc', sort_asc);
+        sort_asc = head.classList.contains('asc') ? false : true;
+
+        sortTable(i, sort_asc);
+    }
+})
+
+
+function sortTable(column, sort_asc) {
+    [...table_rows].sort((a, b) => {
+        let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
+            second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
+
+        return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
+    })
+        .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
+}
+
+// 3. Converting HTML table to PDF
+
+const pdf_btn = document.querySelector('#toPDF');
+const customers_table = document.querySelector('#customers_table');
+
+const toPDF = function (customers_table) {
+    const html_code = `
+    <link rel="stylesheet" href="style.css">
+    <main class="table" >${customers_table.innerHTML}</main>
+    `;
+
+    const new_window = window.open();
+    new_window.document.write(html_code);
+
+    setTimeout(() => {
+        new_window.print();
+        new_window.close();
+    }, 400);
+}
+
+pdf_btn.onclick = () => {
+    toPDF(customers_table);
+}
+
+// 4. Converting HTML table to JSON
+
+const json_btn = document.querySelector('#toJSON');
+
+const toJSON = function (table) {
+    let table_data = [],
+        t_head = [],
+
+        t_headings = table.querySelectorAll('th'),
+        t_rows = table.querySelectorAll('tbody tr');
+
+    for (let t_heading of t_headings) {
+        let actual_head = t_heading.textContent.trim().split(' ');
+
+        t_head.push(actual_head.splice(0, actual_head.length - 1).join(' ').toLowerCase());
+    }
+
+    t_rows.forEach(row => {
+        const row_object = {},
+            t_cells = row.querySelectorAll('td');
+
+        t_cells.forEach((t_cell, cell_index) => {
+            const img = t_cell.querySelector('img');
+            if (img) {
+                row_object['customer image'] = decodeURIComponent(img.src);
+            }
+            row_object[t_head[cell_index]] = t_cell.textContent.trim();
+        })
+        table_data.push(row_object);
+    })
+
+    return JSON.stringify(table_data, null, 4);
+}
+
+json_btn.onclick = () => {
+    const json = toJSON(customers_table);
+    downloadFile(json, 'json')
+}
+
+// 5. Converting HTML table to CSV File
+
+const csv_btn = document.querySelector('#toCSV');
+
+const toCSV = function (table) {
+    // Code For SIMPLE TABLE
+    // const t_rows = table.querySelectorAll('tr');
+    // return [...t_rows].map(row => {
+    //     const cells = row.querySelectorAll('th, td');
+    //     return [...cells].map(cell => cell.textContent.trim()).join(',');
+    // }).join('\n');
+
+    const t_heads = table.querySelectorAll('th'),
+        tbody_rows = table.querySelectorAll('tbody tr');
+
+    const headings = [...t_heads].map(head => {
+        let actual_head = head.textContent.trim().split(' ');
+        return actual_head.splice(0, actual_head.length - 1).join(' ').toLowerCase();
+    }).join(',') + ',' + 'image name';
+
+    const table_data = [...tbody_rows].map(row => {
+        const cells = row.querySelectorAll('td'),
+            img = decodeURIComponent(row.querySelector('img').src),
+            data_without_img = [...cells].map(cell => cell.textContent.replace(/,/g, ".").trim()).join(',');
+
+        return data_without_img + ',' + img;
+    }).join('\n');
+
+    return headings + '\n' + table_data;
+}
+
+csv_btn.onclick = () => {
+    const csv = toCSV(customers_table);
+    downloadFile(csv, 'csv', 'customer orders');
+}
+
+// 6. Converting HTML table to EXCEL File
+
+const excel_btn = document.querySelector('#toEXCEL');
+
+const toExcel = function (table) {
+    // Code For SIMPLE TABLE
+    // const t_rows = table.querySelectorAll('tr');
+    // return [...t_rows].map(row => {
+    //     const cells = row.querySelectorAll('th, td');
+    //     return [...cells].map(cell => cell.textContent.trim()).join('\t');
+    // }).join('\n');
+
+    const t_heads = table.querySelectorAll('th'),
+        tbody_rows = table.querySelectorAll('tbody tr');
+
+    const headings = [...t_heads].map(head => {
+        let actual_head = head.textContent.trim().split(' ');
+        return actual_head.splice(0, actual_head.length - 1).join(' ').toLowerCase();
+    }).join('\t') + '\t' + 'image name';
+
+    const table_data = [...tbody_rows].map(row => {
+        const cells = row.querySelectorAll('td'),
+            img = decodeURIComponent(row.querySelector('img').src),
+            data_without_img = [...cells].map(cell => cell.textContent.trim()).join('\t');
+
+        return data_without_img + '\t' + img;
+    }).join('\n');
+
+    return headings + '\n' + table_data;
+}
+
+excel_btn.onclick = () => {
+    const excel = toExcel(customers_table);
+    downloadFile(excel, 'excel');
+}
+
+const downloadFile = function (data, fileType, fileName = '') {
+    const a = document.createElement('a');
+    a.download = fileName;
+    const mime_types = {
+        'json': 'application/json',
+        'csv': 'text/csv',
+        'excel': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    }
+    a.href = `
+        data:${mime_types[fileType]};charset=utf-8,${encodeURIComponent(data)}
+    `;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+}
+</script>
+</body>  
+</html>
