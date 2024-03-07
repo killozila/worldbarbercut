@@ -1842,7 +1842,7 @@ background: linear-gradient(90deg, rgb(177, 5, 162) 0%, rgba(212,26,191,0.871113
 
 
 .responsivedesktop {
-  margin: 80px 400px;
+  margin: 80px 80px;
   padding: 20px 20px;
   display: flex;
   text-align: center;
